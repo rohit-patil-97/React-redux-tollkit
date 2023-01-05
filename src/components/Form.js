@@ -46,13 +46,14 @@ const Form = ({ userData = {}, postUser }) => {
 	}
 
 	return (
-		<form onSubmit={submitUser} className='row'>
+		<form onSubmit={submitUser} className='form-wrapper'>
 			<input
 				type='text'
 				name='name'
 				value={user.name}
 				placeholder='Name'
 				onChange={e => handleValue(e)}
+				className="form-control"
 			/>
 			<input
 				type='email'
@@ -60,6 +61,7 @@ const Form = ({ userData = {}, postUser }) => {
 				value={user.email}
 				placeholder='Email'
 				onChange={e => handleValue(e)}
+				className="form-control"
 			/>
 			<input
 				type='tel'
@@ -68,10 +70,11 @@ const Form = ({ userData = {}, postUser }) => {
 				placeholder='Phone (10)'
 				pattern='[0-9]{10}'
 				onChange={e => handleValue(e)}
+				className="form-control"
 			/>
 			<DropComapies companiesId={user.companiesId} handleValue={handleValue} />
 			<input
-				className='btn-submit'
+				className="btn btn-primary btn-lg"
 				type='submit'
 				value={`${!userData.id ? "Add new user" : "Save user"}`}
 			/>

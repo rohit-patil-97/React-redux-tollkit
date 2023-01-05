@@ -38,6 +38,7 @@ const DropCompanies = ({ companiesId, handleValue }) => {
 				setCompany(e.target.value)
 				handleValue(e)
 			}}
+			className="form-select"
 		>
 			{companyList?.map(c => (
 				<option value={c.id} key={c.id}>

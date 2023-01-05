@@ -61,10 +61,10 @@ const CrudUser = () => {
 	if (!usersList) return null
 	return (
 		<>
-			<h3>New user</h3>
+			<h3 className="form-header">Add New user</h3>
 			<Form postUser={postUser} />
 			<div className='all-users'>
-				<h3>All users</h3>
+				<h3 className="table-header">All users List</h3>
 				<Table
 					users={users}
 					usersList={usersList}

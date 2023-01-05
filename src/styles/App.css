@@ -144,3 +144,17 @@ margin-top: 3rem;
     width: 100%;
   }
 }
+
+.table-header{
+  text-align: left;
+}
+.form-header{
+  text-align: left;
+}
+
+.form-wrapper{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: 0 !important;
+}
